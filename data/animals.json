@@ -1,0 +1,42 @@
+[
+  {
+    "term": "la mucca",
+    "definition": "cow"
+  },
+  {
+    "term": "il cane",
+    "definition": "dog"
+  },
+  {
+    "term": "il gatto",
+    "definition": "cat"
+  },
+  {
+    "term": "il cavallo",
+    "definition": "horse"
+  },
+  {
+    "term": "l'uccello",
+    "definition": "bird"
+  },
+  {
+    "term": "il delfino",
+    "definition": "dolphin"
+  },
+  {
+    "term": "il pollo",
+    "definition": "chicken"
+  },
+  {
+    "term": "l'ape",
+    "definition": "bee"
+  },
+  {
+    "term": "la scimmia",
+    "definition": "monkey"
+  },
+  {
+    "term": "il pinguino",
+    "definition": "penguin"
+  }
+]
