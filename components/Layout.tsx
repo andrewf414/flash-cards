@@ -8,6 +8,7 @@ type Props = {
 const links = [
   {slug: '/', text: 'Home'},
   {slug: '/add', text: 'Add New'},
+  {slug: '/remove', text: 'Remove Item'},
 ];
 
 const StandardLayout: FC<Props> = ({

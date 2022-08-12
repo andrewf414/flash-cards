@@ -110,5 +110,45 @@
   {
     "term": "la torta",
     "definition": "cake"
+  },
+  {
+    "term": "il cioccolato",
+    "definition": "chocolate",
+    "description": ""
+  },
+  {
+    "term": "la nocciola",
+    "definition": "hazelnut",
+    "description": ""
+  },
+  {
+    "term": "il pistacchio",
+    "definition": "pistachio",
+    "description": ""
+  },
+  {
+    "term": "la menta",
+    "definition": "mint",
+    "description": ""
+  },
+  {
+    "term": "il limone",
+    "definition": "lemon",
+    "description": ""
+  },
+  {
+    "term": "il lampone",
+    "definition": "raspberry",
+    "description": ""
+  },
+  {
+    "term": "il cocco",
+    "definition": "coconut",
+    "description": ""
+  },
+  {
+    "term": "la vaniglia",
+    "definition": "vanilla",
+    "description": ""
   }
 ]

@@ -2,6 +2,8 @@
   --color-primary: hsl(145, 63%, 49%);
   --color-primary-light: hsl(145, 63%, 70%);
   --color-text-light: #fff;
+  --color-secondary: hsl(210, 29%, 24%);
+  --color-secondary-light: hsl(210, 29%, 44%);
 
   /* Widths */
   --max-width: 1320px;

@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import styled from 'styled-components';
+import { Snackbar } from './Snackbar';
 
 interface Props {
   lists: string[];
@@ -36,6 +38,10 @@ const FormStyle = styled.form`
   gap: 10px;
 `;
 
+function wordExists(word: string, list: string[]) {
+  return list.includes(word);
+}
+
 export function NewEntryForm({ lists }: Props) {
   const {
     register,
@@ -43,23 +49,37 @@ export function NewEntryForm({ lists }: Props) {
     formState: { errors },
   } = useForm<FormData>();
 
+  const [showSnackbar, setShowSnackbar] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState('');
+
   // On submit, store the new word/phrase in local storage
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    const existingString = localStorage.getItem(data.list);
-    if (existingString) {
-      const existing = JSON.parse(existingString);
-      existing.push({
-        term: data.term,
-        definition: data.definition,
-        description: data.description,
-      });
-      localStorage.setItem(data.list, JSON.stringify(existing));
-    } else {
-      localStorage.setItem(data.list, JSON.stringify([{
-        term: data.term,
-        definition: data.definition,
-        description: data.description,
-      }]));
+    
+    try {
+      const existingString = localStorage.getItem(data.list);
+      if (existingString) {
+        const existing = JSON.parse(existingString);
+        existing.push({
+          term: data.term,
+          definition: data.definition,
+          description: data.description,
+        });
+        localStorage.setItem(data.list, JSON.stringify(existing));
+      } else {
+        localStorage.setItem(data.list, JSON.stringify([{
+          term: data.term,
+          definition: data.definition,
+          description: data.description,
+        }]));
+      }
+
+      setSnackbarMessage('Successfully added');
+    } catch (err) {
+      console.log(err);
+      setSnackbarMessage('Something went wrong adding that');
+    } finally {
+      setShowSnackbar(true);
+      setTimeout(() => setShowSnackbar(false), 2000)
     }
   }
 
@@ -73,5 +93,6 @@ export function NewEntryForm({ lists }: Props) {
       {lists.map(list => <option key={list} value={list}>{list}</option>)}
     </InputStyle>
     <ButtonStyle type="submit" />
+    {showSnackbar && <Snackbar>{snackbarMessage}</Snackbar>}
   </FormStyle>
 }

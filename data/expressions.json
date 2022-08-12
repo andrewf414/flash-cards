@@ -126,5 +126,85 @@
   {
     "term": "desidera?",
     "definition": "how can I help you?"
+  },
+  {
+    "term": "che confusione!",
+    "definition": "what a mess!",
+    "description": ""
+  },
+  {
+    "term": "sempre",
+    "definition": "always",
+    "description": ""
+  },
+  {
+    "term": "spesso",
+    "definition": "often",
+    "description": ""
+  },
+  {
+    "term": "di solito",
+    "definition": "usually",
+    "description": ""
+  },
+  {
+    "term": "qualche volta",
+    "definition": "sometimes",
+    "description": ""
+  },
+  {
+    "term": "raramente",
+    "definition": "hardly ever / rarely",
+    "description": ""
+  },
+  {
+    "term": "non...mai",
+    "definition": "never",
+    "description": "use with a verb in between, e.g. non studio mai"
+  },
+  {
+    "term": "nessuno",
+    "definition": "no one",
+    "description": ""
+  },
+  {
+    "term": "che diastro!",
+    "definition": "what a disaster!",
+    "description": ""
+  },
+  {
+    "term": "in ordine",
+    "definition": "in order",
+    "description": ""
+  },
+  {
+    "term": "ogni giorno",
+    "definition": "every day",
+    "description": ""
+  },
+  {
+    "term": "tanto tempo",
+    "definition": "a long time",
+    "description": ""
+  },
+  {
+    "term": "fare una passeggiata",
+    "definition": "take a stroll",
+    "description": ""
+  },
+  {
+    "term": "davvero?",
+    "definition": "really?",
+    "description": ""
+  },
+  {
+    "term": "sicuro/a",
+    "definition": "sure",
+    "description": ""
+  },
+  {
+    "term": "dai!",
+    "definition": "come on!",
+    "description": ""
   }
 ]

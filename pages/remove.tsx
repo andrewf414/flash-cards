@@ -5,14 +5,14 @@ import { ReactNode } from 'react';
 import StandardLayout from '../components/Layout';
 import { Page } from '../interfaces/Page';
 import { Container } from '../components/Container';
-import { NewEntryForm } from '../components/NewEntryForm';
+import { LocalItemsTable } from '../components/LocalItemsTable';
 
 interface Props {
   lists: string[]
   getLayout?: any;
 }
 
-const AddItemPage: Page<Props> = ({ lists }) => (
+const RemoveItemPage: Page<Props> = ({ lists }) => (
   <div>
     <Head>
       <title>Flash Cards</title>
@@ -30,7 +30,7 @@ const AddItemPage: Page<Props> = ({ lists }) => (
         maxWidth: '400px',
         margin: '0 auto'
       }}>
-        <NewEntryForm lists={lists} />
+        <LocalItemsTable lists={lists} />
       </div>
     </Container>
 
@@ -41,7 +41,7 @@ const AddItemPage: Page<Props> = ({ lists }) => (
   </div>
 )
 
-AddItemPage.getLayout = function getLayout(page: ReactNode) {
+RemoveItemPage.getLayout = function getLayout(page: ReactNode) {
 
   return (
     <StandardLayout>
@@ -60,4 +60,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-export default AddItemPage
+export default RemoveItemPage

@@ -1,0 +1,62 @@
+[
+  {
+    "term": "il nonno",
+    "definition": "grandpa"
+  },
+  {
+    "term": "la nonna",
+    "definition": "grandma"
+  },
+  {
+    "term": "il papà / padre",
+    "definition": "dad / father"
+  },
+  {
+    "term": "la madre / mamma",
+    "definition": "mother / mum"
+  },
+  {
+    "term": "la sorella",
+    "definition": "sister"
+  },
+  {
+    "term": "il fratello",
+    "definition": "brother"
+  },
+  {
+    "term": "il cugino/a",
+    "definition": "cousin"
+  },
+  {
+    "term": "lo zio / la zia",
+    "definition": "uncle / aunt"
+  },
+  {
+    "term": "i genitori",
+    "definition": "parents"
+  },
+  {
+    "term": "il figlio / la figlia",
+    "definition": "son / daughter"
+  },
+  {
+    "term": "il cognato / la cognata",
+    "definition": "brother / sister in law"
+  },
+  {
+    "term": "il suocero / la suocera",
+    "definition": "father / mother in law"
+  },
+  {
+    "term": "il marito",
+    "definition": "husband"
+  },
+  {
+    "term": "la moglie",
+    "definition": "wife"
+  },
+  {
+    "term": "il / la nipote",
+    "definition": "nephew / niece / grandson / granddaughter"
+  }
+]

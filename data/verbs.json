@@ -202,5 +202,115 @@
   {
     "term": "prenotare",
     "definition": "to book, to reserve"
+  },
+  {
+    "term": "finire",
+    "definition": "to finish",
+    "description": ""
+  },
+  {
+    "term": "pulire",
+    "definition": "to clean",
+    "description": ""
+  },
+  {
+    "term": "buttare",
+    "definition": "to throw away",
+    "description": ""
+  },
+  {
+    "term": "lavare",
+    "definition": "to wash",
+    "description": ""
+  },
+  {
+    "term": "restare",
+    "definition": "to stay, to remain",
+    "description": ""
+  },
+  {
+    "term": "stirare",
+    "definition": "to iron",
+    "description": ""
+  },
+  {
+    "term": "usare",
+    "definition": "to use",
+    "description": ""
+  },
+  {
+    "term": "correre",
+    "definition": "to run",
+    "description": ""
+  },
+  {
+    "term": "decidere",
+    "definition": "to decide",
+    "description": ""
+  },
+  {
+    "term": "leggere",
+    "definition": "to read",
+    "description": ""
+  },
+  {
+    "term": "scrivere",
+    "definition": "to write",
+    "description": ""
+  },
+  {
+    "term": "mettere",
+    "definition": "to put",
+    "description": ""
+  },
+  {
+    "term": "stendere",
+    "definition": "to hang out",
+    "description": "i vestiti (the clothes)"
+  },
+  {
+    "term": "aprire",
+    "definition": "to open",
+    "description": ""
+  },
+  {
+    "term": "dormire",
+    "definition": "to sleep",
+    "description": ""
+  },
+  {
+    "term": "offrire",
+    "definition": "to offer",
+    "description": ""
+  },
+  {
+    "term": "partire",
+    "definition": "to leave",
+    "description": ""
+  },
+  {
+    "term": "capire",
+    "definition": "to understand",
+    "description": ""
+  },
+  {
+    "term": "construire",
+    "definition": "to build",
+    "description": ""
+  },
+  {
+    "term": "finire",
+    "definition": "to finish",
+    "description": ""
+  },
+  {
+    "term": "preferire",
+    "definition": "to prefer",
+    "description": ""
+  },
+  {
+    "term": "suggerire",
+    "definition": "to suggest",
+    "description": ""
   }
 ]
