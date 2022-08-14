@@ -1,5 +1,6 @@
 {
-  "extends": "next/core-web-vitals",
+  "plugins": ["eslint-plugin-prettier", "@typescript-eslint/eslint-plugin"],
+  "extends": ["next/core-web-vitals", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -76,16 +77,16 @@
         "allowTemplateLiterals": true
       }
     ],
-    // "prettier/prettier": [
-    //   "error",
-    //   {
-    //     "trailingComma": "es5",
-    //     "singleQuote": true,
-    //     "printWidth": 80,
-    //     "tabWidth": 2,
-    //     "endOfLine": "auto"
-    //   }
-    // ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 80,
+        "tabWidth": 2,
+        "endOfLine": "auto"
+      }
+    ],
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": [
       "warn",

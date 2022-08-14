@@ -58,7 +58,7 @@ const CardSetPage: Page<Props> = ({ cardSet, listName }) => {
         maxWidth: '400px',
         margin: '0 auto'
       }}>
-        {completeSet && <CardSet data={completeSet} />}
+        {completeSet && <CardSet data={completeSet} isVerb={listName === "verbs"} />}
       </div>
     </Container>
 

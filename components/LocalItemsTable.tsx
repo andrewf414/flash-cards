@@ -60,20 +60,23 @@ export function LocalItemsTable({ lists }: Props) {
       {lists.map(list => (<ButtonStyle key={list} type="button" onClick={() => setActiveList(list)} className={list === activeList ? 'selected' : ''}>{list}</ButtonStyle>))}
     </ButtonContainerStyle>
     <TableStyle>
-      <tr>
-        <th>Word</th>
-        <th>Definition</th>
-        <th>Description</th>
-        <th>Remove?</th>
-      </tr>
-      {existingItems.map((word, idx) => (
-        <tr key={`${word.definition}${idx}`}>
-          <td>{word.term}</td>
-          <td>{word.definition}</td>
-          <td>{word.description}</td>
-          <td><button onClick={() => handleDelete(word)}>❌</button></td>
-        </tr>
-      ))}
+      <thead>
+        <tr>
+          <th>Word</th>
+          <th>Definition</th>
+          <th>Description</th>
+          <th>Remove?</th>
+        </tr></thead>
+      <tbody>
+        {existingItems.map((word, idx) => (
+          <tr key={`${word.definition}${idx}`}>
+            <td>{word.term}</td>
+            <td>{word.definition}</td>
+            <td>{word.description}</td>
+            <td><button onClick={() => handleDelete(word)}>❌</button></td>
+          </tr>
+        ))}
+      </tbody>
     </TableStyle>
   </>
 }

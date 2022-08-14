@@ -5,7 +5,7 @@ const NavStyle = styled.nav`
   margin: 10px 20px;
   padding: 5px 10px;
   display: flex;
-  gap: 10px;
+  gap: 15px;
   border-bottom: 1px solid;
   border-image: linear-gradient(
       90deg,

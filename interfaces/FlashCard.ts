@@ -1,7 +1,15 @@
 export interface CardData {
     term: string;
-    description?: string;
     definition: string;
-    seenCount?: number;
-    lastSeenDatetime?: string;
+    description?: string;
+    isIscVerb?: boolean;
+    isIrregularVerb?: boolean;
+    conjugation?: {
+      io: string;
+      tu: string;
+      lei: string;
+      noi: string;
+      voi: string;
+      loro: string;
+    }
 }

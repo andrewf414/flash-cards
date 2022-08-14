@@ -1,316 +1,494 @@
 [
   {
     "term": "guardare",
-    "definition": "to watch"
+    "definition": "to watch",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "lavorare",
-    "definition": "to work"
+    "definition": "to work",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "mangiare",
-    "definition": "to eat"
+    "definition": "to eat",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "ordinare",
-    "definition": "to sort"
+    "definition": "to sort",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "parlare",
-    "definition": "to speak"
+    "definition": "to speak",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "preparare",
-    "definition": "to prepare"
+    "definition": "to prepare",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "studiare",
-    "definition": "to study"
+    "definition": "to study",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "guidare",
-    "definition": "to drive"
+    "definition": "to drive",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "viaggiare",
-    "definition": "to travel"
+    "definition": "to travel",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "cantare",
-    "definition": "to sing"
+    "definition": "to sing",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "ballare",
-    "definition": "to dance"
+    "definition": "to dance",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "volare",
-    "definition": "to fly"
+    "definition": "to fly",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "assaggiare",
-    "definition": "to taste"
+    "definition": "to taste",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "abitare",
-    "definition": "to live"
+    "definition": "to live",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "amare",
-    "definition": "to love"
+    "definition": "to love",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "arrivare",
-    "definition": "to arrive"
+    "definition": "to arrive",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "aspettare",
-    "definition": "to wait for"
+    "definition": "to wait for",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "avere",
-    "definition": "to have"
+    "definition": "to have",
+    "isIscVerb": false,
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "ho",
+      "tu": "hai",
+      "lei": "ha",
+      "noi": "abbiamo",
+      "voi": "avete",
+      "loro": "hanno"
+    }
   },
   {
     "term": "cambiare",
-    "definition": "to change"
+    "definition": "to change",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "cominciare",
-    "definition": "to start"
+    "definition": "to start",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "comprare",
-    "definition": "to buy"
+    "definition": "to buy",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "essere",
-    "definition": "to be"
+    "definition": "to be",
+    "isIscVerb": false,
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "sono",
+      "tu": "sei",
+      "lei": "è",
+      "noi": "siamo",
+      "voi": "siete",
+      "loro": "sono"
+    }
   },
   {
     "term": "mandare",
-    "definition": "to send"
+    "definition": "to send",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "telefonare",
-    "definition": "to phone"
-  },
-  {
-    "term": "usare",
-    "definition": "to use"
-  },
-  {
-    "term": "adorare",
-    "definition": "to adore"
-  },
-  {
-    "term": "chiedere",
-    "definition": "to ask"
-  },
-  {
-    "term": "contare",
-    "definition": "to count"
-  },
-  {
-    "term": "correre",
-    "definition": "to run"
-  },
-  {
-    "term": "costare",
-    "definition": "to cost"
-  },
-  {
-    "term": "cucinare",
-    "definition": "to cook"
-  },
-  {
-    "term": "desiderare",
-    "definition": "to desire"
-  },
-  {
-    "term": "dire",
-    "definition": "to say"
-  },
-  {
-    "term": "domandare",
-    "definition": "to ask"
-  },
-  {
-    "term": "entrare",
-    "definition": "to enter"
-  },
-  {
-    "term": "fare",
-    "definition": "to do; to make"
-  },
-  {
-    "term": "insegnare",
-    "definition": "to teach"
-  },
-  {
-    "term": "invitare",
-    "definition": "to invite"
-  },
-  {
-    "term": "osservare",
-    "definition": "to observe"
-  },
-  {
-    "term": "prenotare",
-    "definition": "to book"
-  },
-  {
-    "term": "ridere",
-    "definition": "to laugh"
-  },
-  {
-    "term": "ripetere",
-    "definition": "to repeat"
-  },
-  {
-    "term": "rivedere",
-    "definition": "to revise; to see again"
-  },
-  {
-    "term": "scherzare",
-    "definition": "to joke"
-  },
-  {
-    "term": "stare",
-    "definition": "to stay"
-  },
-  {
-    "term": "trotterellare",
-    "definition": "to trot"
-  },
-  {
-    "term": "vedere",
-    "definition": "to see"
-  },
-  {
-    "term": "volere",
-    "definition": "to want"
-  },
-  {
-    "term": "giocare",
-    "definition": "to play (a game)"
-  },
-  {
-    "term": "suonare",
-    "definition": "to play (an instrument)"
-  },
-  {
-    "term": "prenotare",
-    "definition": "to book, to reserve"
-  },
-  {
-    "term": "finire",
-    "definition": "to finish",
-    "description": ""
-  },
-  {
-    "term": "pulire",
-    "definition": "to clean",
-    "description": ""
-  },
-  {
-    "term": "buttare",
-    "definition": "to throw away",
-    "description": ""
-  },
-  {
-    "term": "lavare",
-    "definition": "to wash",
-    "description": ""
-  },
-  {
-    "term": "restare",
-    "definition": "to stay, to remain",
-    "description": ""
-  },
-  {
-    "term": "stirare",
-    "definition": "to iron",
-    "description": ""
+    "definition": "to phone",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "usare",
     "definition": "to use",
-    "description": ""
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "adorare",
+    "definition": "to adore",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "chiedere",
+    "definition": "to ask",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "contare",
+    "definition": "to count",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "correre",
     "definition": "to run",
-    "description": ""
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "decidere",
-    "definition": "to decide",
-    "description": ""
+    "term": "costare",
+    "definition": "to cost",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "leggere",
-    "definition": "to read",
-    "description": ""
+    "term": "cucinare",
+    "definition": "to cook",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "scrivere",
-    "definition": "to write",
-    "description": ""
+    "term": "desiderare",
+    "definition": "to desire",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "mettere",
-    "definition": "to put",
-    "description": ""
+    "term": "dire",
+    "definition": "to say",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "stendere",
-    "definition": "to hang out",
-    "description": "i vestiti (the clothes)"
+    "term": "domandare",
+    "definition": "to ask",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "aprire",
-    "definition": "to open",
-    "description": ""
+    "term": "entrare",
+    "definition": "to enter",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "dormire",
-    "definition": "to sleep",
-    "description": ""
+    "term": "fare",
+    "definition": "to do; to make",
+    "isIscVerb": false,
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "faccio",
+      "tu": "fai",
+      "lei": "fa",
+      "noi": "facciamo",
+      "voi": "fate",
+      "loro": "fanno"
+    }
   },
   {
-    "term": "offrire",
-    "definition": "to offer",
-    "description": ""
+    "term": "insegnare",
+    "definition": "to teach",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "partire",
-    "definition": "to leave",
-    "description": ""
+    "term": "invitare",
+    "definition": "to invite",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "capire",
-    "definition": "to understand",
-    "description": ""
+    "term": "osservare",
+    "definition": "to observe",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
-    "term": "construire",
-    "definition": "to build",
-    "description": ""
+    "term": "prenotare",
+    "definition": "to book",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "ridere",
+    "definition": "to laugh",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "ripetere",
+    "definition": "to repeat",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "rivedere",
+    "definition": "to revise; to see again",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "scherzare",
+    "definition": "to joke",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "stare",
+    "definition": "to stay",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "trotterellare",
+    "definition": "to trot",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "vedere",
+    "definition": "to see",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "volere",
+    "definition": "to want",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "giocare",
+    "definition": "to play (a game)",
+    "isIscVerb": false,
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "gioco",
+      "tu": "giochi",
+      "lei": "gioca",
+      "noi": "giochiamo",
+      "voi": "giocate",
+      "loro": "giocano"
+    }
+  },
+  {
+    "term": "suonare",
+    "definition": "to play (an instrument)",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "prenotare",
+    "definition": "to book, to reserve",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   },
   {
     "term": "finire",
     "definition": "to finish",
-    "description": ""
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "pulire",
+    "definition": "to clean",
+    "description": "",
+    "isIscVerb": true,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "buttare",
+    "definition": "to throw away",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "lavare",
+    "definition": "to wash",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "restare",
+    "definition": "to stay, to remain",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "stirare",
+    "definition": "to iron",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "usare",
+    "definition": "to use",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "correre",
+    "definition": "to run",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "decidere",
+    "definition": "to decide",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "leggere",
+    "definition": "to read",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "scrivere",
+    "definition": "to write",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "mettere",
+    "definition": "to put",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "stendere",
+    "definition": "to hang out",
+    "description": "i vestiti (the clothes)",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "aprire",
+    "definition": "to open",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "dormire",
+    "definition": "to sleep",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "offrire",
+    "definition": "to offer",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "partire",
+    "definition": "to leave",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "capire",
+    "definition": "to understand",
+    "description": "",
+    "isIscVerb": true,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "construire",
+    "definition": "to build",
+    "description": "",
+    "isIscVerb": true,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "finire",
+    "definition": "to finish",
+    "description": "",
+    "isIscVerb": true,
+    "isIrregularVerb": false
   },
   {
     "term": "preferire",
     "definition": "to prefer",
-    "description": ""
+    "description": "",
+    "isIscVerb": true,
+    "isIrregularVerb": false
   },
   {
     "term": "suggerire",
     "definition": "to suggest",
-    "description": ""
+    "description": "",
+    "isIscVerb": true,
+    "isIrregularVerb": false
   }
 ]
