@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import FlashCard from '../components/FlashCard';
@@ -13,6 +13,33 @@ const ButtonsContainerStyle = styled.div`
 const ConjugationListStyle = styled.ul`
   list-style: none;
 `;
+
+function conjugate(verb: string, isIscVerb: boolean) {
+  const isAre = /are$/i.test(verb);
+  const isCareGare = /[cg]are$/i.test(verb);
+
+  return {
+    io: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}o`,
+    tu: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}${isCareGare ? 'h' : ''}i`,
+    lei: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}${isAre ? 'a' : 'e'}`,
+    noi: `${verb.slice(0, -3)}${isCareGare ? 'h' : ''}iamo`,
+    voi: `${verb.slice(0, -3)}te`,
+    loro: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}ono`,
+  }
+}
+
+function ConjugationList({ data }: { data: CardData }) {
+  const conjugation = conjugate(data.term, !!data.isIscVerb);
+
+  return <ConjugationListStyle>
+    <li>Io {conjugation.io}</li>
+    <li>Tu {conjugation.tu}</li>
+    <li>Lui/lei {conjugation.lei}</li>
+    <li>Noi {conjugation.noi}</li>
+    <li>Voi {conjugation.voi}</li>
+    <li>Loro {conjugation.loro}</li>
+  </ConjugationListStyle>
+}
 
 export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean }) {
   const [index, setIndex] = useState(0);
@@ -41,14 +68,14 @@ export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean })
 
   return <>
     {isVerb && <Modal isOpen={showConjugation} close={close}>
-      <ConjugationListStyle>
-        <li>Io {data[index].term.slice(0, -3)}{data[index].isIscVerb ? 'isc' : ''}o</li>
-        <li>Tu {data[index].term.slice(0, -3)}{data[index].isIscVerb ? 'isc' : ''}i</li>
-        <li>Lui/lei {data[index].term.slice(0, -3)}{data[index].isIscVerb ? 'isc' : ''}{data[index].term.slice(-3) === 'are' ? 'a' : 'e'}</li>
-        <li>Noi {data[index].term.slice(0, -3)}iamo</li>
-        <li>Voi {data[index].term.slice(0, -3)}{data[index].term.slice(-3) === "are" ? 'ate' : data[index].term.slice(-3) === "ere" ? 'ete' : 'ite'}</li>
-        <li>Loro {data[index].term.slice(0, -3)}{data[index].isIscVerb ? 'isc' : ''}ono</li>
-      </ConjugationListStyle>
+      {data[index].isIrregularVerb ? <ConjugationListStyle>
+        <li>Io {data[index].conjugation?.io}</li>
+        <li>Tu {data[index].conjugation?.tu}</li>
+        <li>Lui/lei {data[index].conjugation?.lei}</li>
+        <li>Noi {data[index].conjugation?.noi}</li>
+        <li>Voi {data[index].conjugation?.voi}</li>
+        <li>Loro {data[index].conjugation?.loro}</li>
+      </ConjugationListStyle> : <ConjugationList data={data[index]} />}
     </Modal>}
     <Button onClick={handleSwitchTranslation}>Switch Translation</Button>
     <FlashCard card={data[index]} showAnswer={showAnswer} invertTranslation={invertTranslation} />

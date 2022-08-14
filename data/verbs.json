@@ -184,12 +184,6 @@
     "isIrregularVerb": false
   },
   {
-    "term": "correre",
-    "definition": "to run",
-    "isIscVerb": false,
-    "isIrregularVerb": false
-  },
-  {
     "term": "costare",
     "definition": "to cost",
     "isIscVerb": false,
@@ -211,7 +205,15 @@
     "term": "dire",
     "definition": "to say",
     "isIscVerb": false,
-    "isIrregularVerb": false
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "dico",
+      "tu": "dici",
+      "lei": "dice",
+      "noi": "diciamo",
+      "voi": "dite",
+      "loro": "dicono"
+    }
   },
   {
     "term": "domandare",
@@ -254,12 +256,6 @@
   {
     "term": "osservare",
     "definition": "to observe",
-    "isIscVerb": false,
-    "isIrregularVerb": false
-  },
-  {
-    "term": "prenotare",
-    "definition": "to book",
     "isIscVerb": false,
     "isIrregularVerb": false
   },
@@ -309,21 +305,21 @@
     "term": "volere",
     "definition": "to want",
     "isIscVerb": false,
-    "isIrregularVerb": false
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "voglio",
+      "tu": "vuoi",
+      "lei": "vuole",
+      "noi": "vogliamo",
+      "voi": "volete",
+      "loro": "vogliono"
+    }
   },
   {
     "term": "giocare",
     "definition": "to play (a game)",
     "isIscVerb": false,
-    "isIrregularVerb": true,
-    "conjugation": {
-      "io": "gioco",
-      "tu": "giochi",
-      "lei": "gioca",
-      "noi": "giochiamo",
-      "voi": "giocate",
-      "loro": "giocano"
-    }
+    "isIrregularVerb": false
   },
   {
     "term": "suonare",
@@ -334,13 +330,6 @@
   {
     "term": "prenotare",
     "definition": "to book, to reserve",
-    "isIscVerb": false,
-    "isIrregularVerb": false
-  },
-  {
-    "term": "finire",
-    "definition": "to finish",
-    "description": "",
     "isIscVerb": false,
     "isIrregularVerb": false
   },
@@ -375,13 +364,6 @@
   {
     "term": "stirare",
     "definition": "to iron",
-    "description": "",
-    "isIscVerb": false,
-    "isIrregularVerb": false
-  },
-  {
-    "term": "usare",
-    "definition": "to use",
     "description": "",
     "isIscVerb": false,
     "isIrregularVerb": false

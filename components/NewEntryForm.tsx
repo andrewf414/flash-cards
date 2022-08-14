@@ -49,10 +49,6 @@ const FormStyle = styled.form`
   gap: 10px;
 `;
 
-function wordExists(word: string, list: string[]) {
-  return list.includes(word);
-}
-
 export function NewEntryForm({ lists }: Props) {
   const {
     register,
