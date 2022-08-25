@@ -65,14 +65,15 @@ export function NewEntryForm({ lists }: Props) {
 
   // On submit, store the new word/phrase in local storage
   const onSubmit: SubmitHandler<FormData> = (data) => {
+    const entry = {...data, isLocal: true};
     try {
       const existingString = localStorage.getItem(data.list);
       if (existingString) {
         const existing = JSON.parse(existingString);
-        existing.push(data);
+        existing.push(entry);
         localStorage.setItem(data.list, JSON.stringify(existing));
       } else {
-        localStorage.setItem(data.list, JSON.stringify([data]));
+        localStorage.setItem(data.list, JSON.stringify([entry]));
       }
 
       setSnackbarMessage('Successfully added');
@@ -105,7 +106,7 @@ export function NewEntryForm({ lists }: Props) {
         <InputStyle {...register('conjugation.voi')} placeholder={'voi...'} />
         <InputStyle {...register('conjugation.loro')} placeholder={'loro...'} />
       </>}
-      <ButtonStyle type="submit" />
+      <ButtonStyle type="submit" value="Submit" />
       {showSnackbar && <Snackbar>{snackbarMessage}</Snackbar>}
     </FormStyle>
   </>)

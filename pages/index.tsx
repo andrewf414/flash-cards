@@ -3,9 +3,10 @@ import Head from 'next/head'
 import fs from 'fs';
 import Link from 'next/link';
 import { Page } from '../interfaces/Page';
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import StandardLayout from '../components/Layout';
 import styled from 'styled-components';
+import { CardData } from '../interfaces/FlashCard';
 
 const LinksContainerStyle = styled.div`
   display: flex;
@@ -31,7 +32,18 @@ interface Props {
   cardSets: string[]
 }
 
-const Home: Page<Props> = ({ cardSets }) => (
+const Home: Page<Props> = ({ cardSets }) => {
+  useEffect(() => {
+    // TODO: remove this at some point when people have probably all accessed it
+    cardSets.forEach(cardSet => {
+      const localItemsString = localStorage.getItem(cardSet);
+      const localItems: CardData[] = localItemsString ? JSON.parse(localItemsString) : [];
+      const mapped = localItems.map(item => ({ ...item, isLocal: true }));
+      localStorage.setItem(cardSet, JSON.stringify(mapped));
+    });
+  }, []);
+
+  return (
   <div>
     <Head>
       <title>Flash Cards</title>
@@ -56,10 +68,9 @@ const Home: Page<Props> = ({ cardSets }) => (
 
     </footer>
   </div>
-)
+)}
 
 Home.getLayout = function getLayout(page: ReactNode) {
-
   return (
     <StandardLayout>
       {page}

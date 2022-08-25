@@ -4,6 +4,7 @@ export interface CardData {
     description?: string;
     isIscVerb?: boolean;
     isIrregularVerb?: boolean;
+    isLocal?: boolean;
     conjugation?: {
       io: string;
       tu: string;
