@@ -14,8 +14,12 @@ const ContentWrapperStyle = styled.div`
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  width: 300px;
+  width: 600px;
   margin: 0 auto;
+
+  @media(max-width: 600px) {
+    width: 300px;
+  }
 `;
 
 interface Props {

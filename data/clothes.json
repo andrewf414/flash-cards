@@ -2,5 +2,21 @@
   {
     "term": "il cappello",
     "definition": "the hat"
+  },
+  {
+    "term": "la scarpa",
+    "definition": "the shoe"
+  },
+  {
+    "term": "la giacca",
+    "definition": "the jacket"
+  },
+  {
+    "term": "la gonna",
+    "definition": "the skirt"
+  },
+  {
+    "term": "il vestito",
+    "definition": "the dress"
   }
 ]
