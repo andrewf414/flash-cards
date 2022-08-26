@@ -78,6 +78,7 @@ export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean })
     onSwipedLeft: () => handleNext(),
     onSwipedRight: () => handlePrevious(),
     onSwipedDown: () => handleCheck(),
+    preventScrollOnSwipe: true,
   });
 
   const handleCheck = () => {
