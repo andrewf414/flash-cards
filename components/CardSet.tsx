@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import styled from 'styled-components';
-import Button from '../components/Button';
+import Button from './Buttons/Button';
 import FlashCard from '../components/FlashCard';
 import { CardData } from '../interfaces/FlashCard';
 import { Modal } from './Modal';
+import NavigationButton from './Buttons/NavigationButton';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 const ButtonsContainerStyle = styled.div`
   display: flex;
@@ -14,6 +17,23 @@ const ConjugationListStyle = styled.ul`
   list-style: none;
 `;
 
+const CardAndNavWrapperStyle = styled.div`
+  width: 100%;
+  display: flex;
+
+  @media(max-width: 600px) {
+    button {
+      display: none;
+    }
+  }
+`;
+
+/**
+ * 
+ * @param verb italian verb (e.g. parlare, mettere, dormire)
+ * @param isIscVerb boolean for isc verbs like finire, capire
+ * @returns object with conjugations
+ */
 function conjugate(verb: string, isIscVerb: boolean) {
   const isAre = /are$/i.test(verb);
   const isCareGare = /[cg]are$/i.test(verb);
@@ -28,6 +48,11 @@ function conjugate(verb: string, isIscVerb: boolean) {
   }
 }
 
+/**
+ * Component to display conjugated verb
+ * @param data CardData
+ * @returns Component with a styled list of conjugated verb
+ */
 function ConjugationList({ data }: { data: CardData }) {
   const conjugation = conjugate(data.term, !!data.isIscVerb);
 
@@ -49,6 +74,13 @@ export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean })
   const open = () => setShowConjugation(true);
   const close = () => setShowConjugation(false);
 
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: () => handleNext(),
+    onSwipedRight: () => handlePrevious(),
+    onSwipedDown: () => handleCheck(),
+    preventScrollOnSwipe: true,
+  });
+
   const handleCheck = () => {
     setShowAnswer(true);
   }
@@ -59,6 +91,15 @@ export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean })
       setIndex(0);
     } else {
       setIndex(index + 1);
+    }
+  }
+
+  const handlePrevious = () => {
+    setShowAnswer(false);
+    if ((index - 1) < 0) {
+      setIndex(data.length - 1);
+    } else {
+      setIndex(index - 1);
     }
   }
 
@@ -77,8 +118,15 @@ export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean })
         <li>Loro {data[index].conjugation?.loro}</li>
       </ConjugationListStyle> : <ConjugationList data={data[index]} />}
     </Modal>}
+    
     <Button onClick={handleSwitchTranslation}>Switch Translation</Button>
-    <FlashCard card={data[index]} showAnswer={showAnswer} invertTranslation={invertTranslation} />
+    
+    <CardAndNavWrapperStyle {...swipeHandlers}>
+      <NavigationButton onClick={handleNext}><BsChevronLeft /></NavigationButton>
+      <FlashCard card={data[index]} showAnswer={showAnswer} invertTranslation={invertTranslation} />
+      <NavigationButton onClick={handleNext}><BsChevronRight /></NavigationButton>
+    </CardAndNavWrapperStyle>
+
     <ButtonsContainerStyle style={{ position: 'relative', width: '100%' }}>
       {!showAnswer && <Button onClick={handleCheck} style={{
         position: 'absolute',
@@ -86,15 +134,9 @@ export function CardSet({ data, isVerb }: { data: CardData[]; isVerb: boolean })
       }}>Check</Button>}
       {isVerb && <Button onClick={open} style={{
         position: 'absolute',
-        left: 0,
         right: 0,
-        width: '100px',
-        margin: '0 auto'
       }}>Conjugate</Button>}
-      <Button onClick={handleNext} style={{
-        position: 'absolute',
-        right: 0
-      }}>Next</Button>
+      
     </ButtonsContainerStyle>
   </>
 }
