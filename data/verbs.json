@@ -230,6 +230,7 @@
   {
     "term": "fare",
     "definition": "to do; to make",
+    "description": "Used with a lot of things English says have for. e.g. fare colazione, sport, la spesa, shopping, la doccia, una passegiata, i compiti, une festa, un esame, un giro in bici, forografie, yoga",
     "isIscVerb": false,
     "isIrregularVerb": true,
     "conjugation": {
@@ -471,6 +472,62 @@
     "definition": "to suggest",
     "description": "",
     "isIscVerb": true,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "ascoltare",
+    "definition": "to listen to",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "portare",
+    "definition": "to carry; to bring",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "litigare",
+    "definition": "to argue",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "toccare",
+    "definition": "to touch",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "cercare",
+    "definition": "to look for",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "dimenticare",
+    "definition": "to forget",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "pagare",
+    "definition": "to pay",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "pregare",
+    "definition": "to pray",
+    "description": "",
+    "isIscVerb": false,
     "isIrregularVerb": false
   }
 ]
