@@ -504,7 +504,7 @@
   },
   {
     "term": "cercare",
-    "definition": "to look for",
+    "definition": "to look for; to search",
     "description": "",
     "isIscVerb": false,
     "isIrregularVerb": false
@@ -529,5 +529,48 @@
     "description": "",
     "isIscVerb": false,
     "isIrregularVerb": false
+  },
+  {
+    "term": "camminare",
+    "definition": "to walk",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "celebrare",
+    "definition": "to celebrate",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "prendere",
+    "definition": "to take",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "incontrare",
+    "definition": "to meet",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "andare",
+    "definition": "to go",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": true,
+    "conjugation": {
+      "io": "vado",
+      "tu": "vai",
+      "lei": "va",
+      "noi": "andiamo",
+      "voi": "andate",
+      "loro": "vanno"
+    }
   }
 ]

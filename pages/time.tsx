@@ -6,6 +6,7 @@ import StandardLayout from '../components/Layout';
 import { Page } from '../interfaces/Page';
 import { Container } from '../components/Container';
 import React from 'react';
+import { UnorderedList } from '../components/Lists/UnorderedList';
 
 interface Props {
   getLayout?: any;
@@ -21,12 +22,6 @@ const TimePage: Page<Props> = () => (
     <Container as="main">
       <h2>How Often?</h2>
       <table>
-        <thead>
-          <tr>
-            <th>Italian</th>
-            <th>English</th>
-          </tr>
-        </thead>
         <tbody>
           <tr><td>sempre</td><td>always</td></tr>
           <tr><td>spesso</td><td>often</td></tr>
@@ -34,11 +29,13 @@ const TimePage: Page<Props> = () => (
           <tr><td>qualche volta</td><td>sometimes</td></tr>
           <tr><td>rarmente</td><td>hardly ever/rarely</td></tr>
           <tr><td>non...mai</td><td>never</td></tr>
+          <tr><td>una volta all settimana</td><td>once a week</td></tr>
         </tbody>
       </table>
 
-      <h2>Days of the Week</h2>
-      <ul>
+      <h2>When?</h2>
+      <h3>Days of the Week</h3>
+      <UnorderedList>
         <li>lunedi</li>
         <li>martedi</li>
         <li>mercoledi</li>
@@ -46,15 +43,30 @@ const TimePage: Page<Props> = () => (
         <li>venerdi</li>
         <li>sabato</li>
         <li>domenica</li>
-      </ul>
+      </UnorderedList>
       <aside>Using the definite article (il/la) means every. i.e. il lunedi is on Mondays</aside>
 
-      <h2>Time of Day</h2>
-      <ul>
+      <h3>Time of Day</h3>
+      <UnorderedList>
         <li>mattina</li>
         <li>pomeriggio</li>
         <li>sera</li>
-      </ul>
+      </UnorderedList>
+      <div>
+        verso le sette = about 7
+        verso mezzogiorno = about midday
+        in punto = sharp
+      </div>
+
+      <h3>Relative</h3>
+      <table>
+        <tbody>
+          <tr><td>adesso</td><td>now</td></tr>
+          <tr><td>dopo</td><td>later</td></tr>
+          <tr><td>prima di</td><td>before</td></tr>
+          <tr><td>nel fine settimana</td><td>on the weekendage</td></tr>
+        </tbody>
+      </table>
     </Container>
   </div>
 )
