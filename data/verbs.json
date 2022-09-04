@@ -572,5 +572,33 @@
       "voi": "andate",
       "loro": "vanno"
     }
+  },
+  {
+    "term": "fare una gita",
+    "definition": "to go on a trip",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "inziare",
+    "definition": "to start",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "nuotare",
+    "definition": "to swim",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "organizzare",
+    "definition": "to organise",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   }
 ]

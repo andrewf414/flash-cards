@@ -46,6 +46,22 @@ const TimePage: Page<Props> = () => (
       </UnorderedList>
       <aside>Using the definite article (il/la) means every. i.e. il lunedi is on Mondays</aside>
 
+      <h3>Months / mese</h3>
+      <UnorderedList>
+        <li>gennaio</li>
+        <li>febbraio</li>
+        <li>marzo</li>
+        <li>aprile</li>
+        <li>maggio</li>
+        <li>giugno</li>
+        <li>luglio</li>
+        <li>agosto</li>
+        <li>settembre</li>
+        <li>ottobre</li>
+        <li>novembre</li>
+        <li>dicembre</li>
+      </UnorderedList>
+
       <h3>Time of Day</h3>
       <UnorderedList>
         <li>mattina</li>
