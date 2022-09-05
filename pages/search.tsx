@@ -1,7 +1,7 @@
 import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 import fs from 'fs';
-import { ChangeEvent, ReactNode, SyntheticEvent, useEffect, useState } from 'react';
+import { FormEvent, ReactNode, useEffect, useState } from 'react';
 import StandardLayout from '../components/Layout';
 import { Page } from '../interfaces/Page';
 import { Container } from '../components/Container';
@@ -10,6 +10,7 @@ import { CardData } from '../interfaces/FlashCard';
 import { InputStyle } from '../components/NewEntryForm';
 import { UnorderedList } from '../components/Lists/UnorderedList';
 import FlashCard from '../components/FlashCard';
+import debounce from 'lodash/debounce';
 
 interface Props {
   cardData: CardData[];
@@ -20,7 +21,6 @@ interface Props {
 const SearchPage: Page<Props> = ({ listNames, cardData }) => {
   const [completeSet, setCompleteSet] = useState<CardData[]>();
   const [searchMatches, setSearchMatches] = useState<CardData[]>([]);
-  const [selectedCard, setSelectedCard] = useState<CardData | undefined>();
 
   // read in any from local storage to add to set
   useEffect(() => {
@@ -34,20 +34,15 @@ const SearchPage: Page<Props> = ({ listNames, cardData }) => {
     setCompleteSet([...cardData, ...localCards]);
   }, []);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    if (selectedCard) setSelectedCard(undefined);
-    if (e.target.value) {
-      const filtered = completeSet?.filter(card => card.term.includes(e.target.value) || card.definition.includes(e.target.value));
+  const handleSearchInput = debounce((e: FormEvent<HTMLInputElement>) => {
+    const value = (e.target as HTMLInputElement).value;
+    if (value) {
+      const filtered = completeSet?.filter(card => card.term.includes(value) || card.definition.includes(value));
       setSearchMatches(filtered || []);
     } else {
       setSearchMatches([])
     }
-  }
-
-  const handleSelect = (card: CardData) => {
-    console.log(card);
-    setSelectedCard(card);
-  }
+  }, 200)
 
   return (
     <div>
@@ -57,13 +52,10 @@ const SearchPage: Page<Props> = ({ listNames, cardData }) => {
       </Head>
 
       <Container as="main">
-        <InputStyle type="text" onChange={handleChange} />
-        {selectedCard ?
-          <FlashCard card={selectedCard} showAnswer invertTranslation /> :
+        <InputStyle type="text" onInput={handleSearchInput} />
           <UnorderedList>
-            {searchMatches.map(card => <li onClick={() => handleSelect(card)}>{card.term} = {card.definition}</li>)}
+            {searchMatches.map(card => <li>{card.term} = {card.definition}</li>)}
           </UnorderedList>
-        }
       </Container>
     </div>
   )

@@ -5,6 +5,7 @@ import { TextLink } from './TextLink';
 const HeaderStyle = styled.header`
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 20px;
   border-bottom: 1px solid;
@@ -18,16 +19,13 @@ const HeaderStyle = styled.header`
 `;
 
 const NavStyle = styled.nav`
-  margin: 10px 20px;
-  padding: 5px 10px;
+  padding: 20px;
   display: flex;
   gap: 15px;
 `;
 
 const VersionStyle = styled.span`
-  position: absolute;
-  bottom: 0;
-  right: 40px;
+  align-self: end;
   font-size: 0.8rem;
 `;
 

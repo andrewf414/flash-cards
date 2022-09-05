@@ -11,6 +11,7 @@ const links = [
   { slug: '/add', text: 'Add New' },
   { slug: '/remove', text: 'Remove Item' },
   { slug: '/search', text: 'Search' },
+  { slug: '/instructions', text: 'How to use' },
 ];
 
 const StandardLayout: FC<Props> = ({
