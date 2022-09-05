@@ -126,5 +126,25 @@
   {
     "term": "strano/a",
     "definition": "weird/strange"
+  },
+  {
+    "term": "attivo/a",
+    "definition": "active"
+  },
+  {
+    "term": "libero/a",
+    "definition": "free"
+  },
+  {
+    "term": "noioso/a",
+    "definition": "boring"
+  },
+  {
+    "term": "pieno/a",
+    "definition": "full"
+  },
+  {
+    "term": "ultimo/a",
+    "definition": "last"
   }
 ]

@@ -25,7 +25,7 @@ interface FormData {
   }
 };
 
-const InputStyle = styled.input`
+export const InputStyle = styled.input`
   min-height: 2rem;
   width: 250px;
   border: solid 1px var(--color-primary-light);
