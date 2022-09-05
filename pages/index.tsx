@@ -35,10 +35,6 @@ interface Props {
 }
 
 const Home: Page<Props> = ({ cardSets }) => {
-  const [showInformation, setShowInformation] = useState(false);
-  const open = () => setShowInformation(true);
-  const close = () => setShowInformation(false);
-
   useEffect(() => {
     // TODO: remove this at some point when people have probably all accessed it
     cardSets.forEach(cardSet => {
@@ -49,14 +45,6 @@ const Home: Page<Props> = ({ cardSets }) => {
     });
   }, []);
 
-  useEffect(() => {
-    const shown = localStorage.getItem('shown-information');
-    if (!shown) {
-      open();
-      localStorage.setItem('shown-information', "true");
-    }
-  }, [])
-
   return (
     <div>
       <Head>
@@ -65,16 +53,6 @@ const Home: Page<Props> = ({ cardSets }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Modal isOpen={showInformation} close={close}>
-        <div>
-          <Paragraph>
-            There are now swipe gestures. Swipe left or right to go to next/previous card, and swipe down to get the definition.
-          </Paragraph>
-          <Paragraph>
-            You will also see a flag on cards that you added yourself.
-          </Paragraph>
-        </div>
-      </Modal>
       <main style={{
         display: 'flex',
         flexDirection: 'column',
