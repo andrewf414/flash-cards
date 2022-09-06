@@ -44,7 +44,7 @@ function conjugate(verb: string, isIscVerb: boolean) {
     lei: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}${isAre ? 'a' : 'e'}`,
     noi: `${verb.slice(0, -3)}${isCareGare ? 'h' : ''}iamo`,
     voi: `${verb.slice(0, -3)}${isAre ? 'a' : 'e'}te`,
-    loro: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}ono`,
+    loro: `${verb.slice(0, -3)}${isIscVerb ? 'isc' : ''}${isAre ? 'ano' : 'ono'}`,
   }
 }
 
