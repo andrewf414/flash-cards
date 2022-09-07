@@ -600,5 +600,40 @@
     "description": "",
     "isIscVerb": false,
     "isIrregularVerb": false
+  },
+  {
+    "term": "aiutare",
+    "definition": "to help",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "cenare",
+    "definition": "to have dinner",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "perdere",
+    "definition": "to miss; to lose",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "pranzare",
+    "definition": "to have lunch",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
+  },
+  {
+    "term": "prendere il sole",
+    "definition": "to sunbathe",
+    "description": "",
+    "isIscVerb": false,
+    "isIrregularVerb": false
   }
 ]

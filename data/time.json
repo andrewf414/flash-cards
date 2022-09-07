@@ -1,0 +1,57 @@
+[
+  {
+    "term": "a che ora...?",
+    "definition": "at what time...?",
+    "description": ""
+  },
+  {
+    "term": "alle...",
+    "definition": "at...",
+    "description": ""
+  },
+  {
+    "term": "all'una",
+    "definition": "at one o'clock",
+    "description": ""
+  },
+  {
+    "term": "a mezzogiorno",
+    "definition": "at midday",
+    "description": ""
+  },
+  {
+    "term": "a mezzanotte",
+    "definition": "at midnight",
+    "description": ""
+  },
+  {
+    "term": "che ore sono? / che ora è?",
+    "definition": "what time is it?",
+    "description": ""
+  },
+  {
+    "term": "è l'una",
+    "definition": "it's one o'clock",
+    "description": ""
+  },
+  {
+    "term": "è/sono le...",
+    "definition": "it's...",
+    "description": "sono le for everything that isn't 1"
+  },
+  {
+    "term": "di mattina",
+    "definition": "in the morning",
+    "description": ""
+  },
+  {
+    "term": "di pomeriggio",
+    "definition": "in the afternoon",
+    "description": ""
+  },
+  {
+    "term": "di sera",
+    "definition": "in the evening",
+    "description": ""
+  }
+]
