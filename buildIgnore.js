@@ -8,7 +8,7 @@ function abortBuild() {
 
   // If [build] or is a merge to develop/master then build it
   if (
-    msg.includes('[build]') ||
+    msg.includes('[build]')
   ) {
     return false;
   }
